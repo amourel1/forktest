@@ -1,0 +1,44 @@
+
+<h1>Hello My name Borat, I can't login to my computer device, please help me</h1>
+<form action="wowwowwowoohoohooh.txt" onsubmit="return authenticate()">
+    <label for="username">Username</label>
+    <input
+      id="username"
+      type="text"
+      placeholder="Enter Username"
+      name="username"
+      required
+    />
+    <label for="password">Password</label>
+    <input
+      id="password"
+      type="password"
+      placeholder="Enter Password"
+      name="password"
+      required
+    />
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+  
+ 
+    function authenticate(){
+      var authorised;
+      
+
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      
+
+      if(username == "JamesHenryKeller" && password == "TheSuperiorKeller"){
+        authorised = true;
+      }else{ 
+        authorised = false;
+
+        alert("Sorry, that login is incorrect.");
+      }
+   
+      return authorised;
+    }
+  </script>
